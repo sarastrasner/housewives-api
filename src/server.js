@@ -4,7 +4,6 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const DataCollection = require('./models/data-collection-class');
 
-const unicorn = new DataCollection();
 const quote = new DataCollection();
 
 // const MONGOOSE_URI = 'mongodb://localhost:27017/animals';
