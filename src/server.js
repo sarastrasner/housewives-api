@@ -33,7 +33,7 @@ app.use(routesQuotes);
 app.get('/', homeRouteHandler);
 
 function homeRouteHandler(req, res) {
-  res.status(200).send('Hello World!');
+  res.status(200).send('Welcome, betch.');
 }
 
 app.use('*', notFoundHandler);
