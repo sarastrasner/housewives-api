@@ -8,6 +8,6 @@ const housewifeSchema = mongoose.Schema({
   franchise: { type: String, required: true },
 });
 
-const housewifeModel = mongoose.model('narwhal', housewifeSchema);
+const housewifeModel = mongoose.model('quote', housewifeSchema);
 
 module.exports = housewifeModel;
