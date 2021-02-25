@@ -17,19 +17,19 @@ router.delete('/quotes/:id', deleteQuote);
 
 // Route Handlers
 function getQuotes(req, res) {
-  let allquotes = quotes.get()
+  quotes.get()
     .then((result) => {
       (res.status(200).json(result))});}
 
 function getOneQuote(req, res) {
   const id = req.params.id;
-  let theQuote = quotes.get(id)
+  quotes.get(id)
     .then((result) => {
       (res.status(200).json(result))});}
 
 function createQuote(req, res) {
   let obj = req.body;
-  let newQuote = quotes.create(obj)
+  quotes.create(obj)
     .then((result) => {
       (res.status(200).json(result))});
 }
@@ -37,13 +37,13 @@ function createQuote(req, res) {
 function updateQuote(req, res) {
   const id = req.params.id;
   const obj = req.body;
-  let updatedQuote = quotes.update(id, obj)
+  quotes.update(id, obj)
     .then((result) => {
       (res.status(200).json(result))});}
 
 function deleteQuote(req, res) {
   let id = req.params.id;
-  let deletedQuote = quotes.delete(id)
+  quotes.delete(id)
     .then((result) => {
       (res.status(200).json(result))});}
 
