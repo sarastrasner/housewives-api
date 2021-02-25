@@ -7,9 +7,9 @@ const DataCollection = require('./models/data-collection-class');
 const quote = new DataCollection();
 
 // const MONGOOSE_URI = 'mongodb://localhost:27017/animals';
-const options = {useNewUrlParser: true, useUnifiedTopology: true}
+//const options = {useNewUrlParser: true, useUnifiedTopology: true}
 
-mongoose.connect(process.env.MONGOOSE_URI, options);
+//mongoose.connect(process.env.MONGOOSE_URI, options);
 
 ///////////////////////// ^^ new from today's demo
 const express = require('express');
