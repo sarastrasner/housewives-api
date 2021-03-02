@@ -6,12 +6,6 @@ const DataCollection = require('./models/data-collection-class');
 
 const quote = new DataCollection();
 
-// const MONGOOSE_URI = 'mongodb://localhost:27017/animals';
-//const options = {useNewUrlParser: true, useUnifiedTopology: true}
-
-//mongoose.connect(process.env.MONGOOSE_URI, options);
-
-///////////////////////// ^^ new from today's demo
 const express = require('express');
 
 const notFoundHandler = require('./error-handlers/404.js');
@@ -26,7 +20,6 @@ app.use(express.json());
 app.use(logger);
 app.use(routesQuotes);
 
-// Route
 app.get('/', homeRouteHandler);
 
 function homeRouteHandler(req, res) {
