@@ -25,10 +25,3 @@ const kPopSchema = mongoose.Schema({
 const kPopModel = mongoose.model('kpop', kPopSchema);
 
 module.exports = kPopModel;
-
-[
-  {
-    lat: String,
-    lng: String,
-  },
-];
