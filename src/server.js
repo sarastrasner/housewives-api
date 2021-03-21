@@ -12,6 +12,8 @@ const notFoundHandler = require('./error-handlers/404.js');
 const errorHandler = require('./error-handlers/500.js');
 const logger = require('./middleware/logger.js');
 const routesQuotes = require('./routes/quotes')
+const routesKpop = require('./routes/kpop')
+
 
 const app = express();
 
@@ -19,6 +21,7 @@ app.use(express.json());
 
 app.use(logger);
 app.use(routesQuotes);
+app.use(routesKpop);
 
 app.get('/', homeRouteHandler);
 
